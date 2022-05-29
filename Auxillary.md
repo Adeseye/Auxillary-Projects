@@ -14,7 +14,7 @@ Now that the onboard.sh file was copied over successfully, I will have to update
 
 ![alt text](./Images/step%209%20updating%20onboard%20script.JPG)
 
-![alt text](./Images/step%2010.JPG
+![alt text](./Images/step%2010.JPG)
 
 
 Create a folder called Shell
@@ -79,7 +79,13 @@ Next is to update the private key
 
 Save & exit.
 
-Now I'm going to attempt to connect/access the Linux server using one of the user's that has been added to the server.
+Next I will need to create a public key for users to access the Linux server
+
+<code>vi aux-proj.pem</code>
+
+Now that I have created pem key called aux-proj.pem, I'm going to attempt to connect/access the Linux server using one of the user's that has been added to the server.
+
+<code>ssh -i aux-proj.pem Liam@13.40.183.60</code>
 
 ![alt text](./Images/Liam.JPG)
 
